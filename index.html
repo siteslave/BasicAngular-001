@@ -1,20 +1,28 @@
 <html>
   <head>
+    <meta charset="utf-8">
     <title>Test Angular</title>
     <script src="bower_components/angular/angular.js"></script>
     <script src="app.js"></script>
     <script src="DetailCtrl.js"></script>
     <script src="MainCtrl.js"></script>
     <script src="PersonModel.js"></script>
+    <script src="Directive.js"></script>
   </head>
 
   <body ng-app="Test">
     <div ng-controller="MainCtrl">
+
+      <hello-world firstname="Satit" lastname="Rianpit"></hello-world>
+      <hello-world firstname="John" lastname="Doe"></hello-world>
+
       Welcome, {{ name }}
       <input type="text" ng-model="query">
       <hr>
       <ul>
-        <li ng-repeat="p in person | filter: query"> {{ p.id }} - {{ p.name }}</li>
+        <li ng-repeat="p in person | filter: query">
+          {{ p.id }} - {{ p.name }} Sex: {{ p.sex | toSexName}}
+        </li>
       </ul>
     </div>
 

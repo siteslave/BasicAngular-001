@@ -4,9 +4,9 @@ angular.module('Test.service.Person', [])
     getName: 'Ionic framework',
     getPerson: function () {
       var person = [
-        {id: 1, name: 'Satit Rianpit'},
-        {id: 2, name: 'John Doe'},
-        {id: 3, name: 'Terry'}
+        {id: 1, name: 'Satit Rianpit', sex: '1'},
+        {id: 2, name: 'John Doe', sex: '3'},
+        {id: 3, name: 'Terry', sex: '2'}
       ];
       return person;
     }
