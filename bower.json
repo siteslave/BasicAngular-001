@@ -1,0 +1,19 @@
+{
+  "name": "Angular",
+  "homepage": "https://github.com/siteslave/BasicAngular-001",
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui-router": "^0.2.18",
+    "angular": "^1.5.0"
+  }
+}
