@@ -8,4 +8,14 @@ angular.module('Test.directive.Hello', [])
                 lastname: '@'
             }
         };
+    })
+    .directive('cardDetail', function () {
+        return {
+            restrict: 'E', // E = element, A = attribute, C = class
+            template: '<div>Hello, <strong style="color: red;">{{ firstname }} {{ lastname }}</strong></div>',
+            scope: {
+                firstname: '@',
+                lastname: '@'
+            }
+        };
     });
