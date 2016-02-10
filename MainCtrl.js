@@ -1,8 +1,5 @@
-angular.module('Test.controller.Main', [])
-.controller('MainCtrl', function ($scope) {
+angular.module('Test.controller.Main', ['Test.service.Person'])
+.controller('MainCtrl', function ($scope, PersonModel) {
   $scope.name = 'Ionic Framework';
-  $scope.person = [
-    {id: 1, name: 'Satit Rianpit'},
-    {id: 2, name: 'John Doe'}
-  ]
+  $scope.person = PersonModel.getPerson();
 });
