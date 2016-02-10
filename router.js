@@ -1,6 +1,6 @@
 angular.module('router', [
   'ui.router', 'router.controller.Main', 'router.controller.Person',
-  'router.controller.Detail'
+  'router.controller.Detail', 'router.service.Main'
 ])
 .config(function ($stateProvider, $urlRouterProvider) {
 

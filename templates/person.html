@@ -3,5 +3,6 @@
 <ul>
   <li ng-repeat="p in person">
     <a href="#/detail/{{ $index }}">{{ p.name }}</a>
+    <button ng-click="go($index)">Detail</button>
   </li>
 </ul>

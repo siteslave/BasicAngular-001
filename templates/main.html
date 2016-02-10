@@ -1,3 +1,18 @@
 <h1>Main</h1>
 
 Welcome, {{ name }}
+
+<button ng-click="getUsers()">Show users</button>
+<hr>
+<table border="1" width="600px">
+  <tr>
+    <td>username</td>
+    <td>name</td>
+    <td>email</td>
+  </tr>
+  <tr ng-repeat="u in users">
+    <td>{{ u.username }}</td>
+    <td>{{ u.name }}</td>
+    <td>{{ u.email }}</td>
+  </tr>
+</table>
